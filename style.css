@@ -1,0 +1,334 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'Cormorant Garamond', serif;
+}
+body::-webkit-scrollbar {
+     width: 10px
+} 
+body::-webkit-scrollbar-track {
+	background: #02198c; 
+}
+body::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(190deg,#02198c 0%, #ffffff 0%, #02198c 99%); 
+	background-color: #ffffff;
+}
+header {
+	background: #02198c;
+	padding: 25px 0;
+}
+.box {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+.header-logo {
+	max-height: 38px;
+	transition: all;
+}
+nav {
+	position: absolute;
+	top: 13px;
+	right: 0;
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+}
+nav a:hover {
+	position: relative;
+	color: #ffffff;
+	font-size: 16px;
+}
+.submenu {
+	position:absolute;
+	top:25px;
+	left:0;
+	background-color:#fff;
+	display:none;
+}
+.submenu: hover {
+}
+.video {
+    padding:4em 0 0;
+    background: linear-gradient(#02198c, #ffffff);
+    border-collapse: collapse;
+    white-space: nowrap
+}
+footer {
+	text-align: center;
+	font-size: 14px;
+	padding: 40px;
+	background: #ffffff;
+}
+footer em {
+	font-style: italic;
+}
+.footer-logo {
+	width: 12%;
+	padding: 3px;
+}
+.facebook {
+	width: 8px;
+	padding: 7px;
+}
+.instagram {
+	width: 14px;
+	padding: 7px;
+}
+.twitter {
+	width: 16px;
+	padding: 7px;
+}
+.copyright {
+	padding: 6px;
+}
+.mycontact {
+	text-decoration: none;
+	color: inherit;
+}
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+form {
+    margin: 40px 0;
+}
+form legend {
+	font-size: 32px;
+	text-align: left;
+	margin: 1em 0 1em;
+}
+form label {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+form input, form textarea {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 14px;
+}
+.submit {
+	width: 55%;
+	padding: 15px 0;
+	background: #02198c;
+	color: #ffffff;
+	text-transform: uppercase;
+	border: none;
+	font-size: 14px;
+	transition:1.5s font-size;
+	cursor: pointer;
+	font-family: 'Cormorant Garamond', serif;
+}
+.submit:hover {
+	font-size: 16px;
+}
+
+/*home*/
+
+.home {
+	width:100%;
+	margin: 0 auto;
+	background: #02198c;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+.home-text {
+	text-align: center;
+	font-size: 14px;
+	margin: 0 auto;
+}
+.video {
+	width: 560;
+	margin: auto;
+	text-align: center;
+}
+
+/*css about and lyric about you*/
+
+.about-text, .video-titles{
+	text-align: center;
+}
+.about-text h6 {
+	font-size: 32px;
+	margin: 1em 0 1em;
+}
+.video-title {
+	font-size: 38px;
+	margin: 1em 0 0;
+	font-style: italic;
+}
+.about-text p, {
+    margin: 1em 0 1em;
+    font-size: 16px;
+}
+.lyric-video p {
+	margin: 0.5em;
+    font-size: 16px;
+}
+.about-text strong, .lyric-video strong {
+    font-weight: bold;
+}
+.about-text em, .lyric-video em {
+    font-style: italic;
+}
+.video-title, .lyric-video {
+	text-align: center;
+}
+.carly:hover {
+	font-size: 17px;
+	color: #02198c;
+}
+.members {
+	width: 100%;
+	padding: 50px 0 30px;
+}
+
+/*albums*/
+
+.title-1975 {
+	text-align: center;
+	font-size: 32px;
+	margin: 20px 20px 20px 0;
+}
+
+.tracklist-the1975 {
+	width: 640px;
+	margin:: 0 auto;
+}
+.tracks-the1975 {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+.track {
+	line-height: 1.5;
+}
+.album-the1975 {
+	margin: 0 20px 20px 0;
+}
+
+/*gallery*/
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-rows: 300px;
+	padding: 5px;
+	grid-gap: 5px;
+}
+.item-gallery {
+	position: relative;
+}
+.item-gallery .img-gallery {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.h-1 {
+	grid-row: span 1;
+}
+.h-2 {
+	grid-row: span 2;
+}
+.w-1 {
+	grid-column: span 1;
+}
+.w-2 {
+	grid-column: span 2;
+}
+@media(max-width: 768px) {
+	.gallery {
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: 50vh;
+	}
+	.h-2 {
+		grid-row: span 1;
+	}
+	.w-2 {
+	grid-column: span 1;
+	}
+}
+
+/*tour*/
+
+.tour {
+	background: linear-gradient(#02198c, #99a3d1, #ffffff);
+}
+.tour p, caption {
+	text-align: center;
+	font-size: 28px;
+	color: #ffffff;
+	padding: 10px;
+}
+table {
+	border-collapse: collapse;
+	width: 50%;
+	position: relative;
+	margin: auto;
+	color: #02198c;
+}
+table td, table th {
+	border: 0;
+	padding: 10px;
+	text-align: left;
+}
+table-caption {
+	caption-side: top;
+	text-align: center;
+	font-style: italic;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.tour1 em {
+	font-style: italic;
+}
+.tour1 strong {
+	font-style: bold;
+}
+.tickets {
+	width: 115%;
+	padding: 6px 3px;
+	background: #ffffff;
+	color: #02198c;
+	text-transform: uppercase;
+	border: none;
+	font-size: 14px;
+	transition:1.5s font-size;
+	cursor: pointer;
+	font-family: 'Cormorant Garamond', serif;
+}
+.tickets:hover {
+	font-size: 16px;
+
+}
+@media screen and (max-width: 480px) {
+    .box, .home, .albums, .albums, .home, .video, .contact {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .header-logo, .home {
+        width: 100%;
+    }
+}
