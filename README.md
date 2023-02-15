@@ -5,9 +5,9 @@ Website developed through studies of the<a href= "https://cursos.alura.com.br/fo
 ### Improvements:
 * Add horizontal dropdown menu in Albums and Lyrics.
 * In Lyrics, add three columns with the titles of the songs and when clicked, on the same page, show the complete lyrics of the song without forwarding to another page.
-* Add internal search menu
-* Change font color in Tour
-* Explore different ways of displaying the album and tracklist
-* In the future change the layout according to each album
+* Add internal search menu.
+* Change font color in Tour.
+* Explore different ways of displaying the album and tracklist.
+* In the future change the layout according to each album.
 
 ✨That's all for now✨
